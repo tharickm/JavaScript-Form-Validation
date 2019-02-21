@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<script>
+function validateForm() 
+{
+  var x = document.forms["JavaScript Form Validation"]["firstname"].value;
+  var y = document.forms["JavaScript Form Validation"]["lastname"].value;
+  var z = document.forms["JavaScript Form Validation"]["email"].value;
+  if (x == "") {
+    alert("Please provide a First Name!");
+	}
+else if (y == "") {
+    alert("Please provide a Last Name!");
+	}
+else if (z == "") {
+    alert("Please fill out Email Section!");
+	}
+
+
+else {
+alert("Thank you for Participating!")
+};
+
+  }
+
+</script>
+
+
+
+<meta charset="UTF-8">
+ <u> <h1  style="font-size:60px;text-align:center;"> Customer Information </h1> </u>
+</head>
+
+<body style="background-color:grey;">
+
+
+<form name="JavaScript Form Validation" onsubmit="return validateForm()"  method="post" style="text-align:center";>  
+ First name:<br> 
+ <input type="text" name="firstname"><br> 
+  Last name:<br> 
+ <input type="text" name="lastname"><br> 
+Email:<br> 
+  <input type="text" name="email"><br><br> 
+<input type="submit" value="Submit"> 
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
